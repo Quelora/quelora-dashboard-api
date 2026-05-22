@@ -1,0 +1,33 @@
+{
+  "email": {
+    "welcome_console": {
+      "subject": "Willkommen bei der Quelora Konsole",
+      "title": "Willkommen bei Quelora!",
+      "greeting": "Hallo {name},",
+      "intro": "Ihr Konto wurde erfolgreich von einem Administrator erstellt.",
+      "username_label": "Benutzername: {username}",
+      "security_notice": "Sicherheitshinweis: Ihr vorläufiges Passwort wird Ihnen von Ihrem Administrator separat über einen sicheren Kanal mitgeteilt. Sie müssen es bei Ihrer ersten Anmeldung ändern.",
+      "login_instruction": "Sie können sich über die Schaltfläche unten anmelden, sobald Sie Ihre Zugangsdaten erhalten haben.",
+      "action_btn": "Zur Konsole"
+    },
+    "email_verification": {
+      "subject": "E-Mail bestätigen – Quelora",
+      "title": "Bestätigen Sie Ihre E-Mail-Adresse",
+      "greeting": "Hallo {name},",
+      "intro": "Verwenden Sie den folgenden Bestätigungscode, um Ihre E-Mail-Adresse zu bestätigen und Ihre Registrierung abzuschließen.",
+      "code_label": "Ihr Code: {code}",
+      "code_expiry": "Dieser Code läuft in 15 Minuten ab.",
+      "ignore": "Wenn Sie kein Quelora-Konto erstellt haben, können Sie diese Nachricht ignorieren.",
+      "action_btn": "E-Mail bestätigen"
+    },
+    "password_recovery": {
+      "subject": "Passwort-Wiederherstellung – Quelora",
+      "title": "Passwort zurücksetzen",
+      "greeting": "Hallo {name},",
+      "intro": "Wir haben eine Anfrage zum Zurücksetzen des Passworts für Ihr Quelora-Konto erhalten. Verwenden Sie den folgenden Code, um fortzufahren.",
+      "code_label": "Ihr Wiederherstellungscode: {code}",
+      "code_expiry": "Dieser Code läuft in 15 Minuten ab.",
+      "ignore": "Falls Sie keine Passwort-Zurücksetzung angefordert haben, können Sie diese E-Mail ignorieren."
+    }
+  }
+}

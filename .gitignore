@@ -1,0 +1,4 @@
+# Ignorar archivos de assets subidos
+/public/assets/*
+!/public/assets/.gitkeep
+.env

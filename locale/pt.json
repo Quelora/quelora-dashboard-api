@@ -1,0 +1,33 @@
+{
+  "email": {
+    "welcome_console": {
+      "subject": "Bem-vindo ao Console Quelora",
+      "title": "Bem-vindo à Quelora!",
+      "greeting": "Olá {name},",
+      "intro": "Sua conta foi criada com sucesso por um administrador.",
+      "username_label": "Usuário: {username}",
+      "security_notice": "Aviso de Segurança: Sua senha temporária será compartilhada separadamente pelo seu administrador através de um canal seguro. Você deverá alterá-la no seu primeiro login.",
+      "login_instruction": "Você pode fazer login no console usando o botão abaixo assim que receber suas credenciais.",
+      "action_btn": "Ir para o Console"
+    },
+    "email_verification": {
+      "subject": "Verifique seu e-mail – Quelora",
+      "title": "Confirme seu endereço de e-mail",
+      "greeting": "Olá {name},",
+      "intro": "Use o código de verificação abaixo para confirmar seu e-mail e concluir seu cadastro.",
+      "code_label": "Seu código: {code}",
+      "code_expiry": "Este código expira em 15 minutos.",
+      "ignore": "Se você não criou uma conta na Quelora, ignore esta mensagem.",
+      "action_btn": "Verificar e-mail"
+    },
+    "password_recovery": {
+      "subject": "Recuperação de senha – Quelora",
+      "title": "Redefina a sua senha",
+      "greeting": "Olá {name},",
+      "intro": "Recebemos um pedido para redefinir a senha da sua conta Quelora. Use o código abaixo para continuar.",
+      "code_label": "O seu código de recuperação: {code}",
+      "code_expiry": "Este código expira em 15 minutos.",
+      "ignore": "Se não solicitou uma redefinição de senha, pode ignorar esta mensagem."
+    }
+  }
+}

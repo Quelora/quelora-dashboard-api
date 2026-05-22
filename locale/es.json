@@ -1,0 +1,33 @@
+{
+  "email": {
+    "welcome_console": {
+      "subject": "Bienvenido a la Consola de Quelora",
+      "title": "¡Bienvenido a Quelora!",
+      "greeting": "Hola {name},",
+      "intro": "Tu cuenta ha sido creada exitosamente por un administrador.",
+      "username_label": "Usuario: {username}",
+      "security_notice": "Aviso de Seguridad: Tu contraseña temporal te será enviada por separado por tu administrador a través de un canal seguro. Se te pedirá que la cambies en tu primer inicio de sesión.",
+      "login_instruction": "Puedes iniciar sesión en la consola usando el botón de abajo una vez que recibas tus credenciales.",
+      "action_btn": "Ir a la Consola"
+    },
+    "email_verification": {
+      "subject": "Verifica tu correo – Quelora",
+      "title": "Confirma tu dirección de correo",
+      "greeting": "Hola {name},",
+      "intro": "Usa el código de verificación a continuación para confirmar tu correo y completar tu registro.",
+      "code_label": "Tu código: {code}",
+      "code_expiry": "Este código expira en 15 minutos.",
+      "ignore": "Si no creaste una cuenta en Quelora, puedes ignorar este mensaje.",
+      "action_btn": "Verificar correo"
+    },
+    "password_recovery": {
+      "subject": "Recuperación de contraseña – Quelora",
+      "title": "Restablece tu contraseña",
+      "greeting": "Hola {name},",
+      "intro": "Recibimos una solicitud para restablecer la contraseña de tu cuenta de Quelora. Usa el código a continuación para continuar.",
+      "code_label": "Tu código de recuperación: {code}",
+      "code_expiry": "Este código expira en 15 minutos.",
+      "ignore": "Si no solicitaste un restablecimiento de contraseña, puedes ignorar este mensaje."
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "email": {
+    "welcome_console": {
+      "subject": "Benvenuto nella Console Quelora",
+      "title": "Benvenuto in Quelora!",
+      "greeting": "Ciao {name},",
+      "intro": "Il tuo account è stato creato con successo da un amministratore.",
+      "username_label": "Nome utente: {username}",
+      "security_notice": "Avviso di sicurezza: La tua password temporanea ti verrà comunicata separatamente dal tuo amministratore tramite un canale sicuro. Ti verrà richiesto di modificarla al primo accesso.",
+      "login_instruction": "Puoi accedere alla console utilizzando il pulsante qui sotto una volta ricevute le credenziali.",
+      "action_btn": "Vai alla Console"
+    },
+    "email_verification": {
+      "subject": "Verifica la tua email – Quelora",
+      "title": "Conferma il tuo indirizzo email",
+      "greeting": "Ciao {name},",
+      "intro": "Usa il codice di verifica qui sotto per confermare la tua email e completare la registrazione.",
+      "code_label": "Il tuo codice: {code}",
+      "code_expiry": "Questo codice scade tra 15 minuti.",
+      "ignore": "Se non hai creato un account Quelora, puoi ignorare questo messaggio.",
+      "action_btn": "Verifica email"
+    },
+    "password_recovery": {
+      "subject": "Recupero password – Quelora",
+      "title": "Reimposta la tua password",
+      "greeting": "Ciao {name},",
+      "intro": "Abbiamo ricevuto una richiesta di reimpostazione della password per il tuo account Quelora. Usa il codice qui sotto per procedere.",
+      "code_label": "Il tuo codice di recupero: {code}",
+      "code_expiry": "Questo codice scade tra 15 minuti.",
+      "ignore": "Se non hai richiesto la reimpostazione della password, puoi ignorare questo messaggio."
+    }
+  }
+}

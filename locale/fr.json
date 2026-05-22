@@ -1,0 +1,33 @@
+{
+  "email": {
+    "welcome_console": {
+      "subject": "Bienvenue sur la Console Quelora",
+      "title": "Bienvenue chez Quelora !",
+      "greeting": "Bonjour {name},",
+      "intro": "Votre compte a été créé avec succès par un administrateur.",
+      "username_label": "Nom d'utilisateur : {username}",
+      "security_notice": "Avis de sécurité : Votre mot de passe temporaire vous sera communiqué séparément par votre administrateur via un canal sécurisé. Vous devrez le changer lors de votre première connexion.",
+      "login_instruction": "Vous pouvez vous connecter à la console en utilisant le bouton ci-dessous une fois que vous aurez reçu vos identifiants.",
+      "action_btn": "Accéder à la Console"
+    },
+    "email_verification": {
+      "subject": "Vérifiez votre e-mail – Quelora",
+      "title": "Confirmez votre adresse e-mail",
+      "greeting": "Bonjour {name},",
+      "intro": "Utilisez le code de vérification ci-dessous pour confirmer votre adresse e-mail et finaliser votre inscription.",
+      "code_label": "Votre code : {code}",
+      "code_expiry": "Ce code expire dans 15 minutes.",
+      "ignore": "Si vous n'avez pas créé de compte Quelora, vous pouvez ignorer ce message.",
+      "action_btn": "Vérifier l'e-mail"
+    },
+    "password_recovery": {
+      "subject": "Récupération de mot de passe – Quelora",
+      "title": "Réinitialisez votre mot de passe",
+      "greeting": "Bonjour {name},",
+      "intro": "Nous avons reçu une demande de réinitialisation du mot de passe de votre compte Quelora. Utilisez le code ci-dessous pour continuer.",
+      "code_label": "Votre code de récupération : {code}",
+      "code_expiry": "Ce code expire dans 15 minutes.",
+      "ignore": "Si vous n'avez pas demandé de réinitialisation de mot de passe, vous pouvez ignorer ce message."
+    }
+  }
+}

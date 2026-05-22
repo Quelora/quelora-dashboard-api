@@ -1,0 +1,33 @@
+{
+  "email": {
+    "welcome_console": {
+      "subject": "Welcome to Quelora Console",
+      "title": "Welcome to Quelora!",
+      "greeting": "Hello {name},",
+      "intro": "Your account has been successfully created by an administrator.",
+      "username_label": "Username: {username}",
+      "security_notice": "Security Notice: Your temporary password will be shared with you separately by your administrator via a secure channel. You will be required to change it upon your first login.",
+      "login_instruction": "You can log in to the console using the button below once you receive your credentials.",
+      "action_btn": "Go to Console"
+    },
+    "email_verification": {
+      "subject": "Verify your email – Quelora",
+      "title": "Confirm your email address",
+      "greeting": "Hi {name},",
+      "intro": "Use the verification code below to confirm your email address and complete your registration.",
+      "code_label": "Your code: {code}",
+      "code_expiry": "This code expires in 15 minutes.",
+      "ignore": "If you did not create a Quelora account, you can safely ignore this message.",
+      "action_btn": "Verify Email"
+    },
+    "password_recovery": {
+      "subject": "Password Recovery – Quelora",
+      "title": "Reset your password",
+      "greeting": "Hi {name},",
+      "intro": "We received a request to reset the password for your Quelora Console account. Use the code below to proceed.",
+      "code_label": "Your recovery code: {code}",
+      "code_expiry": "This code expires in 15 minutes.",
+      "ignore": "If you did not request a password reset, you can safely ignore this message."
+    }
+  }
+}

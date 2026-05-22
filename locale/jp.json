@@ -1,0 +1,33 @@
+{
+  "email": {
+    "welcome_console": {
+      "subject": "Queloraコンソールへようこそ",
+      "title": "Queloraへようこそ！",
+      "greeting": "こんにちは {name} さん、",
+      "intro": "管理者があなたのアカウントを正常に作成しました。",
+      "username_label": "ユーザー名: {username}",
+      "security_notice": "セキュリティ通知: 仮パスワードは、安全なチャネルを通じて管理者から別途共有されます。初回ログイン時に変更する必要があります。",
+      "login_instruction": "認証情報を受け取り次第、以下のボタンを使用してコンソールにログインできます。",
+      "action_btn": "コンソールへ移動"
+    },
+    "email_verification": {
+      "subject": "メールアドレスを確認してください – Quelora",
+      "title": "メールアドレスの確認",
+      "greeting": "こんにちは {name} さん、",
+      "intro": "以下の確認コードを使用してメールアドレスを確認し、登録を完了してください。",
+      "code_label": "確認コード: {code}",
+      "code_expiry": "このコードは15分間有効です。",
+      "ignore": "Queloraアカウントを作成していない場合は、このメッセージを無視してください。",
+      "action_btn": "メールを確認する"
+    },
+    "password_recovery": {
+      "subject": "パスワード回復 – Quelora",
+      "title": "パスワードのリセット",
+      "greeting": "こんにちは {name}、",
+      "intro": "Queloraアカウントのパスワードリセットのリクエストを受け付けました。以下のコードを使用して続行してください。",
+      "code_label": "回復コード: {code}",
+      "code_expiry": "このコードは15分で期限切れになります。",
+      "ignore": "パスワードリセットを要求していない場合は、このメッセージを無視してください。"
+    }
+  }
+}

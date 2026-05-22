@@ -1,0 +1,69 @@
+// ---------------------------------------------------------
+// MIGRACIÓN: QUELORA TRUSTRANK
+// Ejecutar en la base de datos principal
+// ---------------------------------------------------------
+
+print("🚀 Iniciando migración de esquemas para TrustRank...");
+
+// 1. ACTUALIZAR PERFILES (PROFILES)
+// Inicializamos a todos los usuarios existentes como L1 (Observer) con Score 0.
+// Usamos { $exists: false } para no sobrescribir si corres el script dos veces.
+var profileResult = db.getCollection('profiles').updateMany(
+    { "trust": { $exists: false } },
+    { 
+        $set: { 
+            "trust": { 
+                "score": 0, 
+                "level": 1, 
+                "last_calc": new Date() 
+            } 
+        } 
+    }
+);
+print("✅ Perfiles actualizados: " + profileResult.modifiedCount);
+
+// 2. ACTUALIZAR COMENTARIOS (COMMENTS)
+// Inicializamos comentarios viejos con un snapshot neutro (L1).
+var commentResult = db.getCollection('comments').updateMany(
+    { "trust_snapshot": { $exists: false } },
+    { 
+        $set: { 
+            "trust_snapshot": { 
+                "level": 1, 
+                "initial_score": 0 
+            } 
+        } 
+    }
+);
+print("✅ Comentarios actualizados: " + commentResult.modifiedCount);
+
+// 3. CREAR COLECCIÓN Y ÍNDICES PARA REPUTATION LOGS
+// Si la colección no existe, Mongo la crea al crear el índice.
+print("⚙️ Creando índices para ReputationLog...");
+
+db.getCollection('reputationlogs').createIndex(
+    { "target_profile_id": 1 }, 
+    { name: "idx_rep_target" } // Para ver el historial de un usuario
+);
+
+db.getCollection('reputationlogs').createIndex(
+    { "created_at": 1 }, 
+    { name: "idx_rep_date" } // Para el CronJob que procesa batches
+);
+
+// Índice compuesto CRÍTICO para el chequeo de "Anti-Brigading"
+// (Evitar que Usuario A vote 50 veces a Usuario B el mismo día)
+db.getCollection('reputationlogs').createIndex(
+    { "source_profile_id": 1, "target_profile_id": 1, "created_at": -1 }, 
+    { name: "idx_rep_antispam" }
+);
+
+// 4. ÍNDICE NUEVO EN PROFILES
+// Para encontrar rápidamente usuarios por nivel de confianza (ej. encontrar expertos)
+print("⚙️ Creando índices para Profiles...");
+db.getCollection('profiles').createIndex(
+    { "trust.score": -1 },
+    { name: "idx_trust_score" }
+);
+
+print("🎉 Migración completada exitosamente.");
